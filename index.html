@@ -227,5 +227,28 @@
 	<script src="main.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+	<script>
+	 // sidenav
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav, {});
+
+        // slider
+        const slider = document.querySelector('.slider');
+            M.Slider.init(slider, {
+            indicators: false,
+            height: 571,
+            transition: 500,
+            interval: 4000
+        });
+         
+        // Text Fields
+        $(document).ready(function() {
+            M.updateTextFields();
+        });
+
+        // scrollspy
+        const ss = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(ss, {});
+	</script>
 </body>
 </html>
