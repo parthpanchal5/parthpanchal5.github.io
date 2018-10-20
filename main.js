@@ -52,3 +52,24 @@ function saveMessages(name, company, email, phone, message){
     message: message
   });
 }
+ // sidenav
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav, {});
+
+        // slider
+        const slider = document.querySelector('.slider');
+            M.Slider.init(slider, {
+            indicators: false,
+            height: 571,
+            transition: 500,
+            interval: 4000
+        });
+         
+        // Text Fields
+        $(document).ready(function() {
+            M.updateTextFields();
+        });
+
+        // scrollspy
+        const ss = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(ss, {});
