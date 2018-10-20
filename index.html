@@ -185,11 +185,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="col s12 m7">
-				<form action="#" method="POST" name="contact">
+				  <form id="contactForm">
 					<div class="card-panel grey lighten-5 message z-depth-4">
 						<h5>Please Fill This Form</h5>
+						      <div class="alert">Your Message has been sent</div>
+
 						<div class="input-field">
-							<form id="contactForm">
+							
 							<input type="text" name="name" autocomplete="off" id="name" style="text-transform: uppercase;" class="validate"  placeholder="Name" required>
 							</div>
 							<div class="input-field">
@@ -199,7 +201,7 @@
 								<textarea class="materialize-textarea" id="message" style="text-transform: uppercase;" autocomplete="off" name="message" placeholder="Enter Message" required></textarea>
 							</div>
 							<button type="submit" name="submit" class="btn btn-teal waves-light btn-small">Send</button>
-							</form>
+							
 					   	</div>
 					</form>
 				</div>
