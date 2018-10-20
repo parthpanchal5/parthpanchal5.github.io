@@ -226,8 +226,9 @@
 	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
 	<script src="main.js"></script>
 	<script>
-	 // sidenav
-            $('.sidenav').sidenav();
+	// sidenav
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav, {});
 
         // slider
         const slider = document.querySelector('.slider');
