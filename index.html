@@ -225,31 +225,39 @@
     <!-- Scripts -->
 	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
 	<script src="main.js"></script>
-	<script>
-	// sidenav
-        const sideNav = document.querySelector('.sidenav');
-        M.Sidenav.init(sideNav);
-
-        // slider
-        const slider = document.querySelector('.slider');
-            M.Slider.init(slider, {
-            indicators: false,
-            height: 571,
-            transition: 500,
-            interval: 4000
-        });
-         
-        // Text Fields
-        $(document).ready(function() {
-            M.updateTextFields();
-        });
-
-        // scrollspy
-        const ss = document.querySelectorAll('.scrollspy');
-        M.ScrollSpy.init(ss, {});
-	</script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+	<script>         
+$(document).ready(function() {
+	// 	Update text fields
+	M.updateTextFields();
 	
+	// 	Sidenav
+	$('.sidenav').sidenav({
+		edge: 'left',
+		draggable: true,
+		inDuration: 250,
+		outDuration: 200,
+		onOpenStart: null,
+		onOpenEnd: null,
+		onCloseStart: null,
+		onCloseEnd: null,
+		preventScrolling: true
+	});
+	
+	// 	Slider
+	$('.slider').slider({
+		indicators: false,
+		height: 571,
+		transition: 500,
+		interval: 4000
+	});
+	
+	// 	Scrollspy
+	$('.scrollspy').scrollSpy();
+
+
+});
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 </body>
 </html>
